@@ -1,0 +1,83 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f06, #4a90e2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem 0;
+  color: #fff;
+}
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  margin-right: 10px;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+button {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #ff4757;
+}
+.todo {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+.todo:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.task {
+  flex: 1;
+  font-size: 1rem;
+  cursor: default;
+}
+.edit, .delete {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.edit:hover {
+  background: #1e90ff;
+}
+.delete:hover {
+  background: #ff4747;
+}
